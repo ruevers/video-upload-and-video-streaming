@@ -13,7 +13,7 @@ function validateForm(customMessage) {
     customMessage.innerHTML = "Please select a video to upload";
     return false;
   }
-  const fileLimit = 104857600;
+  const fileLimit = 1048576000;
   if(uploadedFile.size > fileLimit) {
     customMessage.innerHTML = "Maximum video size allowed: 100MB";
     return false;
